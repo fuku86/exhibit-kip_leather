@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, orientation=landscape">
+    <title>exhibit-nubuck | キップレザー展示ページ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'ヒラギノ角ゴ Pro', 'メイリオ';
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .hero-wrapper {
+            position: relative;
+            width: 100%;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            display: block;
+            background: #f0f0f0;
+        }
+
+        .hero-title {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            text-align: right;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            z-index: 10;
+        }
+
+        .hero-title h1 {
+            font-size: 2.5em;
+            margin: 0;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        .hero-title p {
+            font-size: 1.1em;
+            margin: 5px 0 0 0;
+            opacity: 0.95;
+        }
+
+        main {
+            padding: 40px 30px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0 0 0 30px;
+        }
+
+        li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.8;
+        }
+
+        li:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .en-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+            border-left: 4px solid #667eea;
+        }
+
+        .en-section h2 {
+            color: #764ba2;
+            border-bottom-color: #764ba2;
+        }
+
+        .footer-note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 8px;
+            font-size: 0.95em;
+        }
+
+        .footer-note p {
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #667eea, transparent);
+            margin: 40px 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                max-width: 100%;
+                margin: 0;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            .hero-title h1 {
+                font-size: 1.8em;
+            }
+
+            .hero-title {
+                bottom: 15px;
+                right: 15px;
+            }
+
+            main {
+                padding: 0;
+            }
+
+            section {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 10px 5px;
+                margin-right: 0;
+                margin-top: 20px;
+                margin-left: 0;
+                background: transparent;
+                border-radius: 0;
+                border-left: none;
+            }
+
+            section h2 {
+                font-size: 1.3em;
+                display: block;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-wrapper">
+            <img src="images/kip-hero.jpg" alt="キップレザー" class="hero-image">
+            <div class="hero-title">
+                <h1>exhibit-kip_leather</h1>
+                <p>キップレザーの解説ページ</p>
+            </div>
+        </div>
+
+        <main>
+            <!-- 日本語セクション -->
+            <section>
+                <h2> キップとは</h2>
+                <ul>
+                    <li>キップレザーは、生後6か月〜2年未満の若い牛から採れる革で、カーフ（仔牛革）とステア（成牛革）の中間に位置する素材です。</li>
+                    <li>繊維が細かく密で、吟面（表面）はなめらかで上品な印象を持ちつつ、適度な厚みとコシがあるため、日常使いに耐える丈夫さを備えています。</li>
+                    <li>表面には細かく均一な毛穴が見られ、仕上げによって高級感のある表情が生まれます。</li>
+                    <li>「しなやかさ」と「耐久性」のバランスに優れた革として、財布やグローブ、革小物などに幅広く使用されています。</li>
+                    <li>欧州の高級ブランドでも、カーフと並んでキップが使われることが多く、コストパフォーマンスに優れた高品質素材として評価されています。</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2> 特徴</h2>
+                <ul>
+                    <li>適度なしなやかさと十分な耐久性のバランス</li>
+                    <li>キメが細かく、傷が少ない美しい吟面</li>
+                    <li>カーフよりも丈夫で、ステアよりも柔らかい中間的性質</li>
+                    <li>高級感と実用性を兼ね備えた“バランス型レザー”</li>
+                    <li>比較的リーズナブルで流通量も多く、コスパが良い</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2> 用途</h2>
+                <ul>
+                    <li>財布・手帳カバー・キーケースなどの革小物</li>
+                    <li>靴（ビジネスシューズ、ローファー、登山靴など）</li>
+                    <li>バッグ・ベルトなどのファッションアイテム</li>
+                    <li>グローブやジャケットなどのアパレル</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2> お手入れ</h2>
+                <ul>
+                    <li>牛革全般と同様、乾いた柔らかい布で優しく拭くのが基本</li>
+                    <li>防水スプレーや保革クリームの使用で、風合いが長持ちします</li>
+                    <li>カーフほど繊細ではないが、直射日光や水濡れには注意</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2> ワンポイント</h2>
+                <ul>
+                    <li>キップは「カーフ」と「ステア」の中間に位置する革で、両者の良さをバランスよく持ち合わせた素材です。</li>
+                    <li>初めての革製品選びや、長く使いたいアイテムに最適な“優等生レザー”とも言われています。</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <!-- 英語セクション -->
+            <div class="en-section">
+                <section>
+                    <h2> Overview</h2>
+                    <ul>
+                        <li>Kip leather is made from the hide of young cattle aged 6 months to 2 years, positioned between calf and steer leather.</li>
+                        <li>It features a fine, dense grain, offering a smooth surface with moderate thickness and firmness.</li>
+                        <li>he grain side shows uniform pores, and the finish can produce a refined, luxurious appearance.</li>
+                        <li>Known for its balance of suppleness and durability, kip leather is widely used in wallets, gloves, and small leather goods.</li>
+                        <li>It is considered a **cost-effective premium material**, often used by European luxury brands.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2> Features</h2>
+                    <ul>
+                        <li>Balanced softness and strength</li>
+                        <li>Fine grain with minimal blemishes</li>
+                        <li>More durable than calf, softer than steer</li>
+                        <li>Elegant look with practical resilience</li>
+                        <li>Reasonably priced and widely available</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2> Uses</h2>
+                    <ul>
+                        <li>Wallets, key cases, notebook covers</li>
+                        <li>Shoes and boots (business, casual, hiking)</li>
+                        <li>Bags, belts, and fashion accessories</li>
+                        <li>Apparel like gloves and jackets</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2> Care</h2>
+                    <ul>
+                        <li>Wipe gently with a soft dry cloth</li>
+                        <li>Use waterproof spray or leather conditioner</li>
+                        <li>Avoid direct sunlight and moisture</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2> Tips</h2>
+                    <ul>
+                        <li>Kip leather is a middle-ground material between calf (delicate) and steer (rugged), making it ideal for both elegance and everyday use.</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="footer-note">
+                <p><strong> 注記：</strong>このページは展示品の解説ページです。以下は会社の公式サイトへのリンクです。</p>
+                <p><strong>企業サイト：</strong><a href="https://www.midori-alg.com/" target="_blank">ミドリオートレザー株式会社</a></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 exhibit-kip. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+
