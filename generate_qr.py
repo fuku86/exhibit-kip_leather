@@ -72,7 +72,7 @@ def generate_qr_code(url, output_path, logo_path=None, box_size=10, border=4):
 
 if __name__ == "__main__":
     # GitHub リポジトリ URL
-    GITHUB_URL = "https://fuku86.github.io/exhibit-nubuck/"
+    GITHUB_URL = "https://fuku86.github.io/exhibit-kip_leather/"
     
     # 出力ファイルパス
     OUTPUT_PATH = Path(__file__).parent / "qr_code.png"
